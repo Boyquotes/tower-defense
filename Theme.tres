@@ -1,0 +1,35 @@
+[gd_resource type="Theme" load_steps=4 format=3 uid="uid://ctweiy1tom1n3"]
+
+[ext_resource type="FontFile" uid="uid://bfi68rw1mf8m0" path="res://assets/Fonts/Kenney Pixel.ttf" id="1_0huvg"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4wa4l"]
+content_margin_left = 8.0
+content_margin_top = 8.0
+content_margin_right = 8.0
+content_margin_bottom = 8.0
+bg_color = Color(0, 0, 0, 0.607843)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a17in"]
+content_margin_left = 8.0
+content_margin_top = 8.0
+content_margin_right = 8.0
+content_margin_bottom = 8.0
+bg_color = Color(0, 0, 0, 0.215686)
+
+[resource]
+default_font = ExtResource("1_0huvg")
+default_font_size = 32
+Button/colors/font_color = Color(1, 1, 1, 0.607843)
+Button/colors/font_disabled_color = Color(1, 1, 1, 0.215686)
+Button/colors/font_focus_color = Color(1, 1, 1, 1)
+Button/colors/font_hover_color = Color(1, 1, 1, 1)
+Button/styles/disabled = SubResource("StyleBoxFlat_4wa4l")
+Button/styles/focus = SubResource("StyleBoxFlat_4wa4l")
+Button/styles/hover = SubResource("StyleBoxFlat_4wa4l")
+Button/styles/normal = SubResource("StyleBoxFlat_4wa4l")
+Button/styles/pressed = SubResource("StyleBoxFlat_4wa4l")
+HBoxContainer/constants/separation = 16
+TextEdit/styles/focus = SubResource("StyleBoxFlat_a17in")
+TextEdit/styles/normal = SubResource("StyleBoxFlat_a17in")
+TextEdit/styles/read_only = SubResource("StyleBoxFlat_a17in")
+VBoxContainer/constants/separation = 16

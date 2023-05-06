@@ -1,0 +1,64 @@
+[gd_scene load_steps=2 format=3 uid="uid://cxalxdg5p07f3"]
+
+[ext_resource type="Script" path="res://Login.gd" id="1_w02sm"]
+
+[node name="Login" type="CanvasLayer"]
+script = ExtResource("1_w02sm")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_top = 32
+theme_override_constants/margin_right = 32
+theme_override_constants/margin_bottom = 32
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Tower Defense"
+horizontal_alignment = 1
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="TextEdit" type="TextEdit" parent="MarginContainer/VBoxContainer/VBoxContainer2"]
+custom_minimum_size = Vector2(2.08165e-12, 44)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "rhberro@gmail.com"
+placeholder_text = "example@email.com"
+
+[node name="TextEdit2" type="TextEdit" parent="MarginContainer/VBoxContainer/VBoxContainer2"]
+custom_minimum_size = Vector2(2.08165e-12, 44)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Merdadocaralho123@"
+placeholder_text = "password"
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(400, 2.08165e-12)
+layout_mode = 2
+
+[node name="Button" type="Button" parent="MarginContainer/VBoxContainer/VBoxContainer3"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+text = "Login"
+
+[node name="Button2" type="Button" parent="MarginContainer/VBoxContainer/VBoxContainer3"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+text = "Quit"
+
+[node name="Label2" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "A game by Rafael Berro, all rights reserved @ 2023"
+horizontal_alignment = 1
+vertical_alignment = 2
